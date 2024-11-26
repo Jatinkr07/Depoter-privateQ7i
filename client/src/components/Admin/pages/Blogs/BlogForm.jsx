@@ -14,6 +14,12 @@ const BlogForm = ({ activeBlog, setShowModal, refreshBlogs }) => {
   const [newImageFiles, setNewImageFiles] = useState([]);
   const [isFeatured, setIsFeatured] = useState(false);
 
+  const [currentHost, setcurrentHost] = useState(null);
+
+  useEffect(() => {
+    setcurrentHost(window.location.hostname);
+  }, [currentHost]);
+  console.log(currentHost);
   useEffect(() => {
     if (activeBlog) {
       setTitle(activeBlog.title || "");

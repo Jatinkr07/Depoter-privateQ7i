@@ -4,14 +4,16 @@ const path = require("path");
 
 // Create Blog
 const createBlog = async (req, res) => {
+  console.log(req.headers.host);
   try {
     const { title, author, description, content, isFeatured } = req.body;
 
     // Handle images: req.files is an array of uploaded files, storing the path to each
     const images =
-      req.files?.map(
-        (file) =>
-          `https://depoter-privateq7i-4.onrender.com/uploads/${file.filename}`
+      req.files?.map((file) =>
+        req.host == "localhost"
+          ? `http://localhost:4001/uploads/${file.filename}`
+          : `https://depoter-privateq7i-4.onrender.com/uploads/${file.filename}`
       ) || [];
 
     const newBlog = await Blog.create({
@@ -23,7 +25,7 @@ const createBlog = async (req, res) => {
       isFeatured: isFeatured || false,
     });
 
-    res.status(201).json(newBlog);
+    res.status(201).json({ newBlog: "fjdk" });
   } catch (error) {
     console.error("Error creating blog:", error);
     res
@@ -49,7 +51,7 @@ const getAllBlogs = async (req, res) => {
   try {
     const blogs = await Blog.find().lean();
 
-    console.log(blogs);
+    // console.log(blogs);
 
     res.status(200).json(blogs);
   } catch (error) {
