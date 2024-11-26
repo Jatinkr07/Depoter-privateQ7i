@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { FaEdit, FaTrashAlt, FaEye } from "react-icons/fa"; // Import React Icons
+import { FaEdit, FaTrashAlt, FaEye } from "react-icons/fa"; // Import React Icon
 import API_URL from "../../../../utils/api";
 
 const BlogTable = ({ setActiveBlog, setShowModal, setShowDetailsModal }) => {

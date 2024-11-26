@@ -10,7 +10,8 @@ const createBlog = async (req, res) => {
     // Handle images: req.files is an array of uploaded files, storing the path to each
     const images =
       req.files?.map(
-        (file) => `http://localhost:4001/uploads/${file.filename}`
+        (file) =>
+          `https://subtle-syrniki-c59650.netlify.app/uploads/${file.filename}`
       ) || [];
 
     const newBlog = await Blog.create({
