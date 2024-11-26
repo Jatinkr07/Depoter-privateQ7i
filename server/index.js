@@ -16,7 +16,7 @@ connectDB();
 const app = express();
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://lively-capybara-1b6776.netlify.app/",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 };
