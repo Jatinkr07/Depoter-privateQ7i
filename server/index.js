@@ -16,7 +16,7 @@ connectDB();
 const app = express();
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://helpful-lily-ccb1b9.netlify.app/",
   methods: ["GET", "POST", "PUT", "DELETE"],
   credentials: true,
 };
