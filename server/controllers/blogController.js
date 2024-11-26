@@ -11,7 +11,7 @@ const createBlog = async (req, res) => {
     const images =
       req.files?.map(
         (file) =>
-          `https://subtle-syrniki-c59650.netlify.app/uploads/${file.filename}`
+          `https://depoter-privateq7i-4.onrender.com/uploads/${file.filename}`
       ) || [];
 
     const newBlog = await Blog.create({
