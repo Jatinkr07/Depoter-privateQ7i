@@ -142,7 +142,7 @@ const BlogForm = ({ activeBlog, setShowModal, refreshBlogs }) => {
                 imagesToKeep?.map((image, index) => (
                   <div key={index} className="relative mb-2 mr-2">
                     <img
-                      src={`${API_URL}${image}`}
+                      src={image}
                       alt={`img-${index}`}
                       className="object-cover w-20 h-20 rounded"
                     />

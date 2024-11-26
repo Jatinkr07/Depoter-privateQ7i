@@ -100,7 +100,7 @@ const BlogTable = ({ setActiveBlog, setShowModal, setShowDetailsModal }) => {
                 <td className="px-4 py-3 text-sm">{blog.title}</td>
                 <td className="px-4 py-3 text-sm">
                   <img
-                    src={`${API_URL}${blog.images}`}
+                    src={blog.images}
                     alt={blog.title}
                     className="object-cover w-16 h-16 rounded-md"
                   />

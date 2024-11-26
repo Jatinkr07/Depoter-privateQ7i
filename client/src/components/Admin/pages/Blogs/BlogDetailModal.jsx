@@ -25,7 +25,7 @@ const BlogDetailsModal = ({ blog, show, closeModal }) => {
           <div className="mt-4">
             <h3 className="text-lg font-semibold text-gray-800">Image</h3>
             <img
-              src={`${API_URL}${blog.images}`}
+              src={blog.images}
               alt={blog.title}
               className="object-cover w-full h-64 mt-2 rounded-lg"
             />
