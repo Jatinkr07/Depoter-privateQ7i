@@ -1,0 +1,348 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom css */
+
+/* ##################################### */
+/* ########## Global Css ############### */
+/* ##################################### */
+
+* {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.small-content {
+  font-size: 12px;
+}
+
+.section-content {
+  font-size: 14px;
+}
+
+.section-heading {
+  font-size: 24px;
+}
+
+.section-small-heading {
+  font-size: 20px;
+}
+
+.banner-heading {
+  font-size: 64px;
+}
+
+.text-yellow {
+  color: #ffbe2e;
+}
+
+.bg-yellow {
+  background: #ffbe2e;
+}
+
+.seconday-bg {
+  background: #f4f4f4;
+}
+
+/* ##################################### */
+/* ########## Header Css ############### */
+/* ##################################### */
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-brand {
+  color: white;
+}
+
+.custom-dropdown .dropdown-menu {
+  background-color: #343a40; /* Dark background */
+  color: white; /* White text */
+}
+
+.custom-dropdown .dropdown-item {
+  color: white; /* White text for dropdown items */
+}
+
+.custom-dropdown .dropdown-item:hover,
+.custom-dropdown .dropdown-item:focus {
+  background-color: #495057; /* Slightly lighter dark background on hover */
+  color: white;
+}
+.navbar-dark .custom-dropdown .dropdown-toggle {
+  color: white; /* White text for dropdown toggle */
+}
+
+.navbar .dropdown-toggle::after {
+  color: white;
+}
+
+#offcanvasNavbar-expand-lg {
+  background: #212529;
+}
+
+.navbar .navbar-toggler {
+  background: white;
+}
+
+/* ##################################### */
+/* ########## Home Css ############### */
+/* ##################################### */
+
+.banner-image {
+  border: 20px solid white;
+  border-radius: 10px;
+  position: absolute;
+  right: -11%;
+  top: -25%;
+  width: 55%;
+}
+
+.section2 .tool1 {
+  position: absolute;
+  left: -80px;
+  bottom: -40px;
+}
+
+.section2 .tool2 {
+  position: absolute;
+  right: -80px;
+  bottom: -40px;
+}
+
+.solution-contents {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  justify-content: space-between;
+  margin-top: 10%;
+}
+
+.home-blog-container {
+  display: grid;
+  justify-content: space-between;
+  grid-template-columns: 30% 30% 30%;
+}
+
+.home-supplyChange-box {
+  width: 100%;
+  background: linear-gradient(to bottom, #f5f5f7, white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-container {
+  display: grid;
+  grid-template-columns: 32% 32% 32%;
+  text-align: center;
+}
+
+.supply-chain-container {
+  display: grid;
+  grid-template-columns: 19% 19% 19% 19% 19%;
+  text-align: center;
+}
+
+/* page 3 */
+.text-gradient {
+  color: linear-gradient(89.99deg, #eda119 0.01%, #252525 71.79%);
+}
+
+/*###################################### page 5 ####################################*/
+.page5-banner {
+  background: linear-gradient(
+    358.44deg,
+    rgba(35, 33, 136, 0) 2.36%,
+    rgba(43, 41, 140, 0.19) 41.09%,
+    rgba(55, 53, 147, 0.15) 98.7%
+  );
+}
+
+.page5-gradient-text {
+  background: linear-gradient(90deg, #363492 0%, #10102c 100%);
+}
+
+.page5-banner-sec2 {
+  background: linear-gradient(
+    90deg,
+    #050378 0%,
+    rgba(5, 3, 120, 0.899902) 6.25%,
+    rgba(5, 3, 120, 0.899219) 12.5%,
+    rgba(5, 3, 120, 0.897363) 18.75%,
+    rgba(5, 3, 120, 0.9) 25%,
+    rgba(5, 3, 120, 0.887793) 31.25%,
+    rgba(5, 3, 120, 0.878906) 37.5%,
+    rgba(5, 3, 120, 0.866504) 43.75%,
+    rgba(5, 3, 120, 0.85) 50%,
+    rgba(5, 3, 120, 0.833496) 56.25%,
+    rgba(5, 3, 120, 0.821094) 62.5%,
+    rgba(5, 3, 120, 0.812207) 68.75%,
+    rgba(5, 3, 120, 0.80625) 75%,
+    rgba(5, 3, 120, 0.802637) 81.25%,
+    rgba(5, 3, 120, 0.800781) 87.5%,
+    rgba(5, 3, 120, 0.800098) 93.75%,
+    rgba(5, 3, 120, 0.8) 100%
+  );
+}
+
+/* ######################## page 6 ##################### */
+.page6-banner-start-button {
+  background: linear-gradient(90deg, #fab842 0%, #eda119 100%);
+}
+.page6-banner-main {
+  background: linear-gradient(
+    358.44deg,
+    rgba(237, 161, 25, 0.02) 2.36%,
+    rgba(237, 161, 25, 0.1) 41.09%,
+    rgba(237, 161, 25, 0.15) 98.7%
+  );
+}
+
+/* Override Ant Design styles with custom classes */
+
+/* @media query */
+@media (max-width: 1200px) {
+  .banner-image {
+    width: 60%;
+    top: -10px;
+  }
+  .package-permonth-container {
+    grid-template-columns: 32% 32% 32%;
+  }
+}
+
+@media (max-width: 1048px) {
+  .banner-image {
+    width: 50%;
+    top: -10px;
+  }
+
+  .supply-chain-container {
+    grid-template-columns: 24% 24% 24% 24%;
+  }
+}
+
+@media (max-width: 991px) {
+  .solution-contents {
+    grid-template-columns: 33% 33% 33%;
+  }
+  .solution-contents {
+    grid-template-columns: 50% 50%;
+  }
+
+  .border-container {
+    flex-wrap: wrap;
+  }
+
+  .border-container .box1 {
+    width: 100%;
+  }
+  .border-container .box2 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-heading {
+    font-size: 46px;
+  }
+
+  .banner-image {
+    width: 100%;
+  }
+
+  .counter-container {
+    grid-template-columns: 50% 50%;
+  }
+
+  .package-permonth-container {
+    grid-template-columns: 50% 50%;
+  }
+
+  /* .supply-border {
+    display: none;
+  } */
+
+  .supply-chain-container {
+    grid-template-columns: 100%;
+  }
+
+  .home-blog-container {
+    grid-template-columns: 50% 50%;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 570px) {
+  .solution-contents {
+    grid-template-columns: 100%;
+  }
+  .home-blog-container {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 481px) {
+  .package-permonth-container {
+    grid-template-columns: 100%;
+  }
+  .counter-container {
+    grid-template-columns: 100%;
+  }
+}
+
+@media (max-width: 468px) {
+  .banner-heading {
+    font-size: 32px;
+  }
+
+  .section-small-heading {
+    font-size: 18px;
+  }
+}
+
+/* styles.css */
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.climate-padding {
+  padding: 3rem;
+}
+
+.warehouse {
+  margin-bottom: 1.5rem;
+}
+.overview {
+  padding: 1rem;
+}
+.overviewHead {
+  margin-bottom: 0.8rem;
+}
+
+.advantagesHead {
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .advantagesHead {
+    margin-bottom: 0.5rem;
+  }
+  .overviewHead {
+    margin-bottom: 0.1rem;
+  }
+  .climate-padding {
+    padding: 0.5rem;
+  }
+  .warehouse {
+    margin-bottom: 0.25rem;
+  }
+  .overview {
+    padding: 0.8rem;
+  }
+}
